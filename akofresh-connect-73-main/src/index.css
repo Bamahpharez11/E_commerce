@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Fresh Agricultural Theme */
+    --background: 0 0% 100%;
+    --foreground: 140 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 10% 15%;
+
+    /* Fresh Green Primary */
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Earth Tone Secondary */
+    --secondary: 28 80% 52%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Light Muted */
+    --muted: 120 20% 97%;
+    --muted-foreground: 140 10% 45%;
+
+    /* Accent Yellow */
+    --accent: 45 93% 47%;
+    --accent-foreground: 140 10% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 120 15% 90%;
+    --input: 120 15% 90%;
+    --ring: 142 76% 36%;
+
+    --radius: 0.75rem;
+    
+    /* Custom Agricultural Colors */
+    --fresh-green: 142 76% 36%;
+    --leaf-green: 120 60% 50%;
+    --earth-brown: 28 80% 52%;
+    --warm-orange: 33 100% 50%;
+    --sky-blue: 199 89% 48%;
+    
+    /* Status Colors */
+    --status-pending: 45 93% 47%;
+    --status-verified: 142 76% 36%;
+    --status-rejected: 0 84.2% 60.2%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 140 20% 8%;
+    --foreground: 120 20% 95%;
+
+    --card: 140 15% 12%;
+    --card-foreground: 120 20% 95%;
+
+    --popover: 140 15% 12%;
+    --popover-foreground: 120 20% 95%;
+
+    --primary: 142 76% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 28 75% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 140 15% 18%;
+    --muted-foreground: 120 15% 65%;
+
+    --accent: 45 90% 55%;
+    --accent-foreground: 140 20% 10%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 140 15% 20%;
+    --input: 140 15% 20%;
+    --ring: 142 76% 45%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
